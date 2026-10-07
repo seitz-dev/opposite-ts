@@ -1,15 +1,14 @@
-# opposites
+# opposite
 
-To install dependencies:
+A lightweight Typescript utility for managing pairs of opposite values.
 
-```bash
-bun install
+
+## Example Usage
 ```
-
-To run:
-
-```bash
-bun run index.ts
+const pair = new Opposite<string>("good", "bad");
+console.log(pair.getValue()); // returns "good"
+console.log(pair.reverse().getValue()); // returns "bad"
+ 
+const flag = "good"
+console.log(pair.setState(flag === "bad").getValue()) // returns "good"
 ```
-
-This project was created using `bun init` in bun v1.4.2. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
