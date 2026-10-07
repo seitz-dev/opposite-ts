@@ -13,7 +13,7 @@
  */
 export class Opposite<T> {
     private state: boolean = false;
-    public constructor(private firstValue: T, private secondValue: T) { }
+    public constructor(private readonly firstValue: T, private readonly secondValue: T) { }
 
     /**
      * Retrieves the current value based on the internal state.
