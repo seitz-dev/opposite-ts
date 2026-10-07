@@ -1,0 +1,29 @@
+{
+  "name": "opposite",
+  "version": "0.1.0",
+  "description": "A lightweight Typescript utility for managing pairs of opposite values.",
+  "module": "index.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist --format esm && tsc -p tsconfig.build.json",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist"
+  ],
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "license": "MIT"
+}

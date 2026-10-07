@@ -1,0 +1,1 @@
+export { Opposite } from "./opposite";
