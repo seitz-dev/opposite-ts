@@ -1,5 +1,7 @@
 # opposite
 
+[![npm version](https://img.shields.io/npm/v/opposite.svg)](https://www.npmjs.com/package/opposite)
+
 A lightweight Typescript utility for managing pairs of opposite values.
 
 
